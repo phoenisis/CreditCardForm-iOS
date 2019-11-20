@@ -169,52 +169,52 @@ public class CreditCardFormView : UIView {
         cardView.backgroundColor = .clear
         self.addSubview(cardView)
         //CardView
-        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0.0));
     }
     
     private func createBackView() {
         backView.translatesAutoresizingMaskIntoConstraints = false
         backView.layer.cornerRadius = 6
         backView.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
-        backView.autoresizingMask = [UIView.AutoresizingMask.flexibleLeftMargin, UIView.AutoresizingMask.flexibleRightMargin, UIView.AutoresizingMask.flexibleTopMargin, UIView.AutoresizingMask.flexibleBottomMargin]
+			backView.autoresizingMask = [UIView.AutoresizingMask.flexibleLeftMargin, UIView.AutoresizingMask.flexibleRightMargin, UIView.AutoresizingMask.flexibleTopMargin, UIView.AutoresizingMask.flexibleBottomMargin]
         cardView.addSubview(backView)
         
-        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0.0));
     }
     
     private func createFrontView() {
         frontView.translatesAutoresizingMaskIntoConstraints = false
         frontView.layer.cornerRadius = 6
         frontView.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
-        frontView.autoresizingMask = [UIView.AutoresizingMask.flexibleLeftMargin, UIView.AutoresizingMask.flexibleRightMargin, UIView.AutoresizingMask.flexibleTopMargin, UIView.AutoresizingMask.flexibleBottomMargin]
+			frontView.autoresizingMask = [UIView.AutoresizingMask.flexibleLeftMargin, UIView.AutoresizingMask.flexibleRightMargin, UIView.AutoresizingMask.flexibleTopMargin, UIView.AutoresizingMask.flexibleBottomMargin]
         cardView.addSubview(frontView)
         setGradientBackground(v: frontView, top: defaultCardColor.cgColor, bottom: defaultCardColor.cgColor)
         
-        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0.0));
+			self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0.0));
     }
     
     private func createbackImage() {
         backImage.translatesAutoresizingMaskIntoConstraints = false
         backImage.image = UIImage(named: "back.jpg")
-        backImage.contentMode = UIView.ContentMode.scaleAspectFill
+			backImage.contentMode = UIView.ContentMode.scaleAspectFill
         frontView.addSubview(backImage)
         
         self.addConstraint(NSLayoutConstraint(item: backImage, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0.0));
@@ -229,16 +229,16 @@ public class CreditCardFormView : UIView {
     private func createBrandImageView() {
         //Card brand image
         brandImageView.translatesAutoresizingMaskIntoConstraints = false
-        brandImageView.contentMode = UIView.ContentMode.scaleAspectFit
+			brandImageView.contentMode = UIView.ContentMode.scaleAspectFit
         frontView.addSubview(brandImageView)
         
         self.addConstraint(NSLayoutConstraint(item: brandImageView, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 10));
         
         self.addConstraint(NSLayoutConstraint(item: brandImageView, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1.0, constant: -10));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==60)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": brandImageView]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==60)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": brandImageView]));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==40)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": brandImageView]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==40)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": brandImageView]));
     }
     
     private func createCardNumber() {
@@ -256,9 +256,9 @@ public class CreditCardFormView : UIView {
         
         self.addConstraint(NSLayoutConstraint(item: cardNumber, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1.0, constant: 0.0));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==200)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cardNumber]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==200)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cardNumber]));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==30)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cardNumber]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==30)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cardNumber]));
     }
     
     private func createCardHolder() {
@@ -326,9 +326,9 @@ public class CreditCardFormView : UIView {
         
         self.addConstraint(NSLayoutConstraint(item: chipImg, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1.0, constant: 15));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==45)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": chipImg]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==45)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": chipImg]));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==30)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": chipImg]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==30)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": chipImg]));
     }
     
     private func createBackLine() {
@@ -341,9 +341,9 @@ public class CreditCardFormView : UIView {
         
         self.addConstraint(NSLayoutConstraint(item: backLine, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: backView, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==300)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": backLine]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==300)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": backLine]));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==50)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": backLine]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==50)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": backLine]));
     }
     
     private func createCVC() {
@@ -358,9 +358,9 @@ public class CreditCardFormView : UIView {
         
         self.addConstraint(NSLayoutConstraint(item: cvc, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: backLine, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: 10));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==50)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cvc]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==50)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cvc]));
         
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==25)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cvc]));
+			self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==25)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cvc]));
         
         self.addConstraint(NSLayoutConstraint(item: cvc, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: backView, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1.0, constant: -10));
     }
@@ -383,7 +383,7 @@ public class CreditCardFormView : UIView {
         UIView.transition(from:showingSide,
                           to: hiddenSide,
                           duration: 0.7,
-                          options: [UIView.AnimationOptions.transitionFlipFromRight, UIView.AnimationOptions.showHideTransitionViews],
+													options: [UIView.AnimationOptions.transitionFlipFromRight, UIView.AnimationOptions.showHideTransitionViews],
                           completion: nil)
     }
     
